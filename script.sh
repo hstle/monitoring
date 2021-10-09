@@ -16,7 +16,7 @@ openports=`nmap localhost | sed '1,5d;$d'`
 #upgrade=`apt-get upgrade`
 nmap=/bin/nmap
 name=/bin/uname
-if [ -e $nmap ]&& [ -e $name ];then
+if [ -e $nmap ] && [ -e $name ];then
   echo "all files exists"
 else
   echo "u need to instal $nmap and $name"
