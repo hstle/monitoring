@@ -17,7 +17,7 @@ openports=`nmap localhost | sed '1,5d;$d'`
 nmap=/bin/nmap
 name=/bin/uname
 if [ -e $nmap ] && [ -e $name ];then
-  echo "all files exists"
+  echo "-----------------------------"
 else
   echo "u need to instal $nmap and $name"
   exit 1
